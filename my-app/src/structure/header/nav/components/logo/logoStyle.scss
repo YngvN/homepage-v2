@@ -1,0 +1,96 @@
+@import "../../../../../globalStyle/colors.scss";
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; // Rounded corners
+    width: 500px; // Adjust as needed
+    height: 500px; // Adjust as needed
+    margin: 100px auto; // Centers the container horizontally and sets top margin
+    padding: 3%;
+    overflow: hidden;
+
+    &.logo-container,
+    .grey-block {
+        background-color: #ccc; // Light grey background
+
+        &.grey-block {
+            display: flex;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: rotate(-31deg);
+            right: 38.1%;
+            top: 40%;
+        }
+    }
+
+    &.grey-block {
+        display: flex;
+        position: absolute;
+        background-color: red;
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .logo-line {
+            position: absolute;
+            width: 13%;
+            background-color: $white; // Uses white from imported colors
+            border-radius: 40px; // Rounds the edges of the lines
+
+            &.logo-n {
+
+                height: 100%;
+
+                &.n-1 {
+                    left: 0;
+                }
+
+                &.n-2 {
+                    height: 115%;
+                    left: 27%;
+                    top: -7.5%;
+                    transform: rotate(-31deg);
+                }
+            }
+
+            &.logo-y {
+                height: 75%;
+
+
+
+                &.y-1 {
+                    transform: rotate(-31deg);
+                    left: 37%;
+                    top: -4.5%;
+                }
+
+                &.y-2 {
+                    transform: rotate(31deg);
+                    right: 16%;
+                    top: -4.5%;
+                }
+
+                &.y-3 {
+                    height: 50%;
+                    top: 50%;
+                    right: 33%;
+                }
+            }
+        }
+
+
+
+
+    }
+}

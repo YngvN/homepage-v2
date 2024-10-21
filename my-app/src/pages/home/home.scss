@@ -1,0 +1,122 @@
+// .page-title {
+//     font-size: 2rem;
+//     text-align: center;
+//     margin-bottom: 2rem;
+// }
+
+// .content-list {
+//     list-style-type: none;
+//     padding: 0;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1.5rem;
+
+//     li {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+
+//         img {
+//             margin-top: 1rem;
+//             border-radius: 8px;
+//             max-width: 300px;
+//         }
+//     }
+
+
+// }
+
+// .content-list li {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+// }
+
+// .content-list img {
+//     margin-top: 1rem;
+//     border-radius: 8px;
+// }
+
+.page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    /* Enables vertical scroll snapping */
+    overflow-y: scroll;
+    /* Allows vertical scrolling */
+    height: 100vh;
+    /* Full viewport height for scrolling */
+    scrollbar-width: none;
+    /* Firefox - Hide the scrollbar */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, and Opera */
+    }
+
+    li.list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        /* Ensure each list item fills the viewport */
+        gap: 1rem;
+        padding: 1rem;
+        scroll-snap-align: start;
+        /* Snaps the start of each item to the viewport */
+        box-sizing: border-box;
+        /* Include padding and borders in the element's height/width */
+
+        .text-content {
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        li.list-item {
+            flex-direction: column;
+
+            .image-content,
+            .text-content {
+                flex: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.scroll-button {
+    .prev {
+        position: fixed;
+
+    }
+}

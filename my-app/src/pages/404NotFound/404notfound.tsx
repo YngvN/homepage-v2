@@ -1,7 +1,11 @@
 import React from "react";
 
 function RouteNotFound() {
-    return <div>404 error thingy</div>
+    return (
+        <div>
+            <h1>404 error thingy</h1>
+        </div>
+    );
 };
 
 export default RouteNotFound;

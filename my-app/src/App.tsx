@@ -25,13 +25,13 @@
 
 // export default App;
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Layout } from './structure/layout';
 import Home from './pages/home/home';
-import Page1 from './pages/page1/page1';
-import Page2 from './pages/page2/page2';
+import Music from './pages/music/music';
+import Programming from './pages/programming/programming';
 import Page3 from './pages/page3/page3';
 import RouteNotFound from './pages/404NotFound/404notfound';
 
@@ -42,8 +42,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="page1" element={<Page1 />} />
-        <Route path="page2" element={<Page2 />} />
+        <Route path="music" element={<Music />} />
+        <Route path="programming" element={<Programming />} />
         <Route path="page3" element={<Page3 />} />
         <Route path="*" element={<RouteNotFound />} />
       </Route>

@@ -10,19 +10,14 @@ const Nav: React.FC = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/page1">Page 1</Link>
+                    <Link to="/music">Music</Link>
                 </li>
                 <li>
-                    <Link to="/page2">Page 2</Link>
+                    <Link to="/programming">Programming</Link>
                 </li>
-                <li>
-                    <Link to="/page3">Page 3</Link>
-                </li>
-                {/* Add more links as needed */}
             </ul>
         </nav>
     );
 };
 
 export default Nav;
-
