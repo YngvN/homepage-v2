@@ -4,16 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px; // Rounded corners
-    width: 500px; // Adjust as needed
-    height: 500px; // Adjust as needed
-    margin: 100px auto; // Centers the container horizontally and sets top margin
-    padding: 3%;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 1%;
     overflow: hidden;
 
     &.logo-container,
     .grey-block {
-        background-color: #ccc; // Light grey background
+        background-color: #ccc;
 
         &.grey-block {
             display: flex;
@@ -26,15 +25,6 @@
         }
     }
 
-    &.grey-block {
-        display: flex;
-        position: absolute;
-        background-color: red;
-        height: 100%;
-        width: 100%;
-
-
-    }
 
     .logo {
         display: flex;
@@ -45,8 +35,8 @@
         .logo-line {
             position: absolute;
             width: 13%;
-            background-color: $white; // Uses white from imported colors
-            border-radius: 40px; // Rounds the edges of the lines
+            background-color: $white;
+            border-radius: 40px;
 
             &.logo-n {
 
