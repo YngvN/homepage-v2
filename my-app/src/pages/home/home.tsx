@@ -49,7 +49,6 @@ const Home: React.FC = () => {
 
     return (
         <div className="home-container">
-            <h1 className='page-title'>Home</h1>
             <ul className="content-list" ref={contentListRef}>
                 <li className="list-item">
                     <div className="text-content">

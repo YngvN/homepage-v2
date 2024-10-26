@@ -1,18 +1,55 @@
 @import './components/navButtons.scss';
 
 header {
-    background-color: yellow;
-    // position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100vw;
+    align-items: center;
+    position: sticky;
+    top: 0;
     z-index: 1000;
+    padding-top: 1em;
+
 
     nav {
-        li {
-            list-style: none;
 
-            a {
-                color: $white;
-                text-decoration: none;
+
+        ul {
+            padding: 0;
+            position: relative;
+            display: flex;
+            min-width: max-content;
+
+            li {
+                list-style: none;
+                margin-left: .5em;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    padding: .5em;
+                    transition: .5s;
+
+                    &:hover {
+                        background-color: $grey;
+                    }
+                }
+
+
             }
+
         }
+    }
+
+    .logo-container {
+        height: 50px;
+        width: 50px;
+
+
+    }
+
+    .logo-bg {
+        background-color: $black;
     }
 }
